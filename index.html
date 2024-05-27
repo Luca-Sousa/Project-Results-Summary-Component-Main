@@ -6,42 +6,79 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Results summary component</title>
+  <title>Project | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
+<body class="w-auto min-h-screen flex items-center justify-center mobile:justify-start mobile:flex-col bg-Light-lavender">
 
-  Your Result
-  76
-  of 100
+  <div class="hidden mobile:block w-auto h-10 leading-10"></div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+  <main class="w-auto mobile:flex-col flex flex-row rounded-3xl bg-white ml-4 mr-4">
 
-  Reaction
-  80 / 100
+    <div class="w-1/2 mobile:w-full flex items-center justify-center flex-col py-8 px-10 mobile:px-14 rounded-3xl bg-gradient-to-t to-Light-slate-blue from-70% from-Light-royal-blue">
+      <h2 class="text-Light-lavender text-xl font-bold">Your Result</h2>
+    
+      <div class="w-36 h-36 flex items-center justify-center flex-col my-6 rounded-[50%] bg-gradient-to-t to-Persian-blue to-70% from-Violet-blue">
+        <h2 class="text-white text-5xl font-extralight">76</h2>
+        <p class="text-Light-lavender text-md font-medium">of 100</p>
+      </div>
 
-  Memory
-  92 / 100
+      <div class="flex items-center justify-center flex-col">
+        <h2 class="text-white text-2xl font-bold mb-5">Great</h2>
+        <p class="text-Light-lavender text-center font-medium text-sm">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
 
-  Verbal
-  61 / 100
+    <div class="w-1/2 mobile:w-full flex justify-between flex-col py-8 px-7 rounded-3xl">
+      
+      <h2 class="text-Dark-gray-blue text-xl font-extrabold">Summary</h2>
 
-  Visual
-  72 / 100
+      <div class="h-52 flex flex-col justify-between mobile: my-7">
+        
+        <div class="flex items-center justify-between px-3 py-2 bg-red-50 rounded-md">
+          <div class="flex">
+            <img src="assets/images/icon-reaction.svg" alt="icon-reaction">
+            <h2 class="ml-3 text-Light-red">Reaction</h2>
+          </div>
+          <p class="text-gray-400 font-bold"><span class="text-Dark-gray-blue">80</span> / 100</p>
+        </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="flex items-center justify-between px-3 py-2 bg-yellow-50 rounded-md">
+          <div class="flex">
+            <img src="assets/images/icon-memory.svg" alt="icon-memory">
+            <h2 class="ml-3 text-Orangey-yellow">Memory</h2>
+          </div>
+          <p class="text-gray-400 font-bold"><span class="text-Dark-gray-blue">92</span> / 100</p>
+        </div>
+
+        <div class="flex items-center justify-between px-3 py-2 bg-green-50 rounded-md">
+          <div class="flex">
+            <img src="assets/images/icon-verbal.svg" alt="icon-verbal">
+            <h2 class="ml-3 text-Green-teal">Verbal</h2>
+          </div>
+          <p class="text-gray-400 font-bold"><span class="text-Dark-gray-blue">61</span> / 100</p>
+        </div>
+
+        <div class="flex items-center justify-between px-3 py-2 bg-violet-50 rounded-md">
+          <div class="flex">
+            <img src="assets/images/icon-visual.svg" alt="icon-verbal">
+            <h2 class="ml-3 text-Cobalt-blue">Visual</h2>
+          </div>
+          <p class="text-gray-400 font-bold"><span class="text-Dark-gray-blue">72</span> / 100</p>
+        </div>
+      
+      </div>
+
+      <div class="w-full h-11 flex items-center justify-center rounded-3xl bg-Dark-gray-blue cursor-pointer hover:bg-gradient-to-t to-Light-slate-blue via-Light-royal-blue from-Light-royal-blue">
+        <button class="text-white text-sm font-medium" type="button">Continue</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="hidden mobile:block w-auto h-10 leading-10"></div>
+
 </body>
 </html>
